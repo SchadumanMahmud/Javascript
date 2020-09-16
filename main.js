@@ -51,3 +51,44 @@ console.log(fruits);
 console.log(fruits[2]);
 console.log(Array.isArray(fruits));
 console.log(fruits.indexOf('oranges'));
+
+const person = {
+    firstName: 'john',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main street',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+
+console.log(person.firstName, person.lastName);
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+
+const { firstName, lastName, address: { city } } = person;
+console.log(city);
+person.email = 'john@gmail.com';
+
+console.log(person);
+
+const todos = [{
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appointment',
+        isCompleted: false
+    },
+];
+
+console.log(todos[1].text);
