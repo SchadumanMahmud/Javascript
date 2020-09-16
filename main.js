@@ -50,4 +50,4 @@ fruits.pop();
 console.log(fruits);
 console.log(fruits[2]);
 console.log(Array.isArray(fruits));
-console.log(fruits.indexOf('oranges'))
+console.log(fruits.indexOf('oranges'));
