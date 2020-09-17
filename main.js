@@ -160,3 +160,45 @@ if (k > 5 || l > 10) {
 if (k > 5 && l > 10) {
     console.log('k is more than 5 or l is more than 10!')
 }
+
+const p = 9;
+const color = p > 10 ? 'red' : 'blue'
+console.log(color);
+
+switch (color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is NOt red or blue')
+};
+
+const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+
+console.log(addNums(5, 5));
+
+// Constructor function
+
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+}
+
+Person.prototype.getBirthYear = function() {
+    return this.dob.getFullYear();
+}
+Person.prototype.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+}
+
+// Instantiate object
+const person1 = new Person('John', 'Doe', '8-28-1998');
+const person2 = new Person('Mary', 'Smith', '3-6-1970');
+
+
+console.log(person2.getFullName());
+console.log(person1);
