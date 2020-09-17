@@ -141,3 +141,22 @@ const todoCompleted = todos.filter(function(todo) {
 })
 
 console.log(todoCompleted);
+
+const k = 6;
+const l = 11;
+
+if (k === 10) {
+    console.log('k is 10');
+} else if (k > 10) {
+    console.log('k is greater than 10');
+} else {
+    console.log('k is not 10');
+}
+
+if (k > 5 || l > 10) {
+    console.log('k is more than 5 or l is more than 10')
+}
+
+if (k > 5 && l > 10) {
+    console.log('k is more than 5 or l is more than 10!')
+}
