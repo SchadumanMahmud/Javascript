@@ -195,6 +195,8 @@ Person.prototype.getFullName = function() {
     return `${this.firstName} ${this.lastName}`;
 }
 
+
+
 // Instantiate object
 const person1 = new Person('John', 'Doe', '8-28-1998');
 const person2 = new Person('Mary', 'Smith', '3-6-1970');
@@ -202,3 +204,25 @@ const person2 = new Person('Mary', 'Smith', '3-6-1970');
 
 console.log(person2.getFullName());
 console.log(person1);
+
+//class
+
+class People {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+const people1 = new People('John', 'Doe', '8-28-1998');
+const people2 = new People('Mary', 'Smith', '3-6-1970');
+
+console.log(people2.getFullName());
+console.log(people1);
